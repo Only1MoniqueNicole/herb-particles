@@ -3,12 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Herb Particles</title>
+  <title>Section Floating Herbs</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
+      width: 100%;
+      height: 400px;
       background: #fffdf6;
       overflow: hidden;
     }
@@ -25,71 +26,54 @@
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-    particlesJS("particles-js", {
-      "particles": {
-        "number": {
-          "value": 25,
-          "density": {
-            "enable": true,
-            "value_area": 800
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 20,
+          density: {
+            enable: true,
+            value_area: 800
           }
         },
-        "shape": {
-          "type": "image",
-          "image": [
-            {
-              "src": "https://i.imgur.com/wb2kZAG.png",
-              "width": 40,
-              "height": 40
-            },
-            {
-              "src": "https://i.imgur.com/1YRMVRD.png",
-              "width": 40,
-              "height": 40
-            },
-            {
-              "src": "https://i.imgur.com/Yv4eYqP.png",
-              "width": 40,
-              "height": 40
-            },
-            {
-              "src": "https://i.imgur.com/zWBB5E7.png",
-              "width": 40,
-              "height": 40
-            }
-          ]
+        shape: {
+          type: 'image',
+          image: {
+            src: 'https://i.imgur.com/wb2kZAG.png',
+            width: 40,
+            height: 40
+          }
         },
-        "opacity": {
-          "value": 0.5,
-          "random": true
+        opacity: {
+          value: 0.5,
+          random: true
         },
-        "size": {
-          "value": 25,
-          "random": true
+        size: {
+          value: 25,
+          random: true
         },
-        "move": {
-          "enable": true,
-          "speed": 1.2,
-          "direction": "none",
-          "random": true,
-          "straight": false,
-          "out_mode": "out"
+        move: {
+          enable: true,
+          speed: 1.2,
+          direction: 'none',
+          random: true,
+          straight: false,
+          out_mode: 'out'
         }
       },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: {
+            enable: true,
+            mode: 'repulse'
           },
-          "onclick": {
-            "enable": false
+          onclick: {
+            enable: false
           },
-          "resize": true
+          resize: true
         }
       },
-      "retina_detect": true
+      retina_detect: true
     });
   </script>
 </body>
